@@ -37,6 +37,7 @@ cc.Class({
 		cccScreen:cc.Node,//1110 1960
 		highscoretip:cc.Node,
 		tips:cc.Label,
+		social:cc.Node,
 		//适配
 		winwidth:null,
 		winheight:null,
@@ -53,7 +54,7 @@ cc.Class({
 		//其他
 		randx:null,
 		diff:1,
-		gameoverLabelAni:cc.Animation,
+		
     },
     onLoad:function(){
 		this.player.active=false;
@@ -67,6 +68,8 @@ cc.Class({
 				self.PlayerMove(delta.x,delta.y,position.x,position.y);
 			}
 		});
+		
+
 	},
     start () {
 		//适配
@@ -146,8 +149,23 @@ cc.Class({
 		this.isOver=true;
 		cc.director.pause();
 		this.player.scale=2;
-		this.playerSprite.spriteFrame=this.overFrame;
-		this.gameoverLabelAni.play();
+		
+		//用户头像设置
+		var self=this;
+		var url=this.social.getComponent('social').avatarURL;
+		cc.log(url);
+		if(url){
+			var imgurl=url+"?aaa=aa.jpg";
+			 cc.loader.load(imgurl, function(err, texture){
+            self.playerSprite.spriteFrame = new cc.SpriteFrame(texture);
+			self.player.scale=0.3;
+			
+        });
+
+		}
+		else{
+		this.playerSprite.spriteFrame=this.overFrame;}
+		
 		
 		//最高分 本地缓存
 		this.highscoretip.active=true;
