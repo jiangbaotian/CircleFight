@@ -1,2 +1,2 @@
-# hello-world
-Hello world new project template.
+# CircleFight COCOSCREATOR
+https://github.com/BenzLeung/circle
