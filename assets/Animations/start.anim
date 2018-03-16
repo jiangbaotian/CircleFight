@@ -1,0 +1,125 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "start",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 0.6,
+  "wrapMode": 0,
+  "curveData": {
+    "paths": {
+      "title-circle": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -1221,
+                90
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                0,
+                90
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                0,
+                490
+              ]
+            }
+          ]
+        }
+      },
+      "title-war": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                1154,
+                -90
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                0,
+                -90
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                0,
+                310
+              ]
+            }
+          ]
+        }
+      },
+      "UI/New Button/Label": {
+        "props": {
+          "color": [
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 0,
+                "g": 255,
+                "b": 0,
+                "a": 255
+              }
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.36666666666666664,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                0,
+                378
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                0,
+                -181
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.6666666666666666,
+      "func": "StartMenuShow",
+      "params": []
+    }
+  ]
+}
