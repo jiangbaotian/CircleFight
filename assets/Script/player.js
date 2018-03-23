@@ -36,9 +36,9 @@ cc.Class({
 			
 			this.controller.getComponent('Game').CircleProduce();
 			//播放粒子(bug)
-			//var par=cc.instantiate(this.parss);
-			//par.parent=this.canvas;
-			//par.setPosition(other.node.getPositionX(),other.node.getPositionY());
+			var par=cc.instantiate(this.parss);
+			par.parent=this.canvas;
+			par.setPosition(other.node.getPositionX(),other.node.getPositionY());
 			
 			other.node.destroy();
 		}
